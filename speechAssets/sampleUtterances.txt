@@ -1,0 +1,13 @@
+GetRandomNumberIntent random number between {LowLimit} and {UpLimit}
+GetRandomNumberIntent what is a random number between {LowLimit} and {UpLimit}
+GetRandomNumberIntent I need a random number between {LowLimit} and {UpLimit}
+GetRandomNumberIntent random number within {LowLimit} and {UpLimit}
+GetRandomNumberIntent what is the winning number within {LowLimit} and {UpLimit}
+MyLanguageIsIntent my favorite language is {Language}
+MyLanguageIsIntent my favorite programming language is {Language}
+MyLanguageIsIntent I prefer to program in {Language}
+MyLanguageIsIntent I love to program in {Language}
+WhatsMyLanguageIntent What is my favorite language
+WhatsMyLanguageIntent What is my favorite programming language
+WhatsMyLanguageIntent What language do I like the most
+WhatsMyLanguageIntent What language do I absolutely love

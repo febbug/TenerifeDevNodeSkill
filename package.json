@@ -1,0 +1,26 @@
+{
+  "name": "tenerife-def-skill",
+  "version": "1.0.0",
+  "description": "Example of a Lambda function implementation for Alexa skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febbug/TenerifeDevNodeSkill.git"
+  },
+  "keywords": [
+    "alexa",
+    "node",
+    "amazon",
+    "lambda",
+    "function"
+  ],
+  "author": "febbug",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/febbug/TenerifeDevNodeSkill/issues"
+  },
+  "homepage": "https://github.com/febbug/TenerifeDevNodeSkill#readme"
+}

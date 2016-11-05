@@ -1,0 +1,11 @@
+c.sharp
+python
+c. plus plus
+java
+swift
+visual basic
+pascal
+haskell
+c.
+objective c.
+javasript

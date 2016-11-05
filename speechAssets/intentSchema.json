@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "intent": "GetRandomNumberIntent",
+      "slots": [
+        {
+          "name": "UpLimit",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "LowLimit",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "MyLanguageIsIntent",
+      "slots": [
+        {
+          "name": "Language",
+          "type": "PROGRAMMING_LANGUAGE"
+        }
+      ]
+    },
+    {
+        "intent":"WhatsMyLanguageIntent"
+    }
+  ]
+}
