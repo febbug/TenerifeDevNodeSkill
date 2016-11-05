@@ -153,7 +153,7 @@ function getLanguageFromSession(intent, session, callback) {
     }
 
     if (favoriteLanguage) {
-        speechOutput = `Your favorite language is ${favoriteLanguage}. Goodbye.`;
+        speechOutput = `Your favorite language is ${favoriteLanguage}, Goodbye.`;
         shouldEndSession = true;
     }
     else {
