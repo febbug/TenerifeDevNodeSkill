@@ -10,8 +10,8 @@ function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
         },
         card: {
             type: 'Simple',
-            title: 'SessionSpeechlet - ${title}',
-            content: 'SessionSpeechlet - ${output}',
+            title: `SessionSpeechlet - ${title}`,
+            content: `SessionSpeechlet - ${output}`,
         },
         reprompt: {
             outputSpeech: {
@@ -174,14 +174,14 @@ function getLanguageFromSession(intent, session, callback) {
  * Called when the session starts.
  */
 function onSessionStarted(sessionStartedRequest, session) {
-    console.log('onSessionStarted requestId=${sessionStartedRequest.requestId}, sessionId=${session.sessionId}');
+    console.log(`onSessionStarted requestId=${sessionStartedRequest.requestId}, sessionId=${session.sessionId}`);
 }
 
 /**
  * Called when the user launches the skill without specifying what they want.
  */
 function onLaunch(launchRequest, session, callback) {
-    console.log('onLaunch requestId=${launchRequest.requestId}, sessionId=${session.sessionId}');
+    console.log(`onLaunch requestId=${launchRequest.requestId}, sessionId=${session.sessionId}`);
 
     // Dispatch to your skill's launch.
     getWelcomeResponse(callback);
@@ -191,7 +191,7 @@ function onLaunch(launchRequest, session, callback) {
  * Called when the user specifies an intent for this skill.
  */
 function onIntent(intentRequest, session, callback) {
-    console.log('onIntent requestId=${intentRequest.requestId}, sessionId=${session.sessionId}');
+    console.log(`onIntent requestId=${intentRequest.requestId}, sessionId=${session.sessionId}`);
 
     const intent = intentRequest.intent;
     const intentName = intentRequest.intent.name;
@@ -219,7 +219,7 @@ function onIntent(intentRequest, session, callback) {
  * Is not called when the skill returns shouldEndSession=true.
  */
 function onSessionEnded(sessionEndedRequest, session) {
-    console.log('onSessionEnded requestId=${sessionEndedRequest.requestId}, sessionId=${session.sessionId}');
+    console.log(`onSessionEnded requestId=${sessionEndedRequest.requestId}, sessionId=${session.sessionId}`);
     // Add cleanup logic here
 }
 
@@ -230,7 +230,7 @@ function onSessionEnded(sessionEndedRequest, session) {
 // etc.) The JSON body of the request is provided in the event parameter.
 exports.handler = (event, context, callback) => {
     try {
-        console.log('event.session.application.applicationId=${event.session.application.applicationId}');
+        console.log(`event.session.application.applicationId=${event.session.application.applicationId}`);
 
         /**
          * Uncomment this if statement and populate with your skill's application ID to
